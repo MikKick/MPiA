@@ -7,7 +7,7 @@ using namespace std;
 pair<Point, Point> closest_pair_between(const std::vector <Point>& PLeft, const std::vector <Point>& PRight, double d)
 {
 	vector <Point> PStripe;
-	pair<Point, Point> result = make_pair(PLeft.back(), PRight.front());
+	pair<Point, Point> result = make_pair(PLeft.back(), ight.front());
 	double xm = (PLeft.back().x + PRight.front().x) / 2;
 	for (const auto& point : PLeft)
 		if (abs(xm - point.x) < d)
